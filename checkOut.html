@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Game Hub</title>
+    <link rel="stylesheet" href="/styles/style2.css">
+</head>
+<body>
+    <div class="gamehubGrid">
+        <header class="accountHeader">
+            <img src="img/Untitled3.png" alt="logo" id="logo">
+            <a href="account.html"><img src="img/userIcon.png" alt="user icon"></a>
+            <input type="text" name="search">
+        </header>
+            <ul class="flex-secondNav">
+                <a href="account.html"><li>Account</li></a>
+                <a href="market.html"><li>Market</li></a>
+                <a href="library.html"><li>Library</li></a>
+                <a href="contact.html"><li>Contact us</li></a>
+            </ul>
+        <main class="checkoutMain">
+            <div class="checkout">
+                <div class="shipping">
+                    <h1>Checkout</h1>
+                    <h2>Shipping details</h2>
+                    <p>Ole-A Knudsen</p>
+                    <p>Kong Oscars gate 26b</p>
+                    <p>5017 Bergen</p>
+                    <p>Norge</p>
+                </div>
+                <div class="checkoutDetails">
+                    <h2>Payment details</h2>
+                    <form action="#" id="checkoutForm">
+                        <label for="fname">Full name:</label><br>
+                        <input type="text" name="fname" class="fnameCardnr"><br>
+                        <label for="cardnr">Card number:</label><br>
+                        <input type="text" name="cardnr" class="fnameCardnr"><br>
+                        <label for="expire">Expiry date:</label><br>
+                        <input type="text" name="exDate" class="exdateCcv"><br>
+                        <label for="ccv">CCV:</label><br>
+                        <input type="text" name="ccv" class="exdateCcv"><br>
+                        <button id="purchase" formaction="checkoutSuccess.html">Purchase</button>
+                    </form>               
+                </div> 
+            </div>
+            <div class="order">
+                <h2>Your order</h2>
+                <div class="gameOrder">
+                    <img src="img/cod.png" alt="callofduty">
+                    <h3>Call of Duty Modern Warfare</h3>
+                    <div class="availableInfo">
+                    <p>Available in Norway</p>
+                    <p>Digital key</p>
+                </div>
+            </div>
+             
+        </div>
+        </main>
+        <footer class="accountFooter">
+            <p>&copy;2020</p>
+        </footer>
+    </div>
+</body>
+</html>

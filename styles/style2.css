@@ -1,0 +1,1030 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    color: white;
+}
+
+html, body {
+    background-color: #19323C;
+    height: 100vh;
+    font-family: 'monsterrat', sans-serif;
+}
+
+.gamehubGrid {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    height: 100%;
+}
+
+header {
+    background-color: #A93F55;
+    height: 45px;
+    grid-row: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A93F55;
+    height: 30px;
+    color: white;
+    grid-row: 4;
+}
+
+header > input[type=text] {
+    float: right;
+    margin: 10px 20px 0px 0px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid #19323C;
+    padding: 0px 25px 0px 0px;
+    background-image: url(../img/smallSearch.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    font-size: 18px;
+    width: 150px;
+    background-size: 20px;
+    color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+#active {
+    border-bottom: #A93F55 solid 3px;
+}
+
+button:hover {
+    background-color: #19323C;
+    border: solid 3px #F2545B;
+}
+
+#logo {
+    width: 65px;
+    margin: 0px 0px 0px 40px;
+    display: inline-block;
+}
+
+h1 {
+    color: white;
+    font-size: 48px;
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+}
+
+h3 {
+    color: white;
+    font-size: 18;
+}
+
+h4 {
+    color: white;
+    font-size: 16;
+}
+
+header>a {
+    float: right;
+    margin: 10px 40px 0px 0px;
+
+}
+
+/* ! Home */
+
+.indexMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-row: 3;
+}
+
+#biglogo {
+    width: 500px;
+}
+
+.mainInput[type=text] {
+    width: 300px;
+    box-sizing: border-box;
+    background-image: url(../img/searchIcon.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    border: none;
+    border-bottom: 3px solid white;
+    font-size: 24px;
+    background-color: transparent;
+    background-size: 30px;
+    color: white;
+    padding: 3px 32px 0 0;
+}
+
+/* ! Profile */
+
+.accountMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr 2fr 1fr;
+    align-items: center;
+}
+
+.flex-secondNav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    grid-row: 2;
+}
+
+.flex-secondNav a li  {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+}
+
+.accountMain > h1{
+    font-size: 38px;
+    color: white;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    text-align: center;
+    color: white;
+    font-family: 'monsterrat', sans-serif;
+    padding: 0 0 0 0;
+    grid-column: 2;
+}
+
+div.profile p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+#age {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+div.profile h3 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+div.profile img {
+    border-radius: 50%;
+    height: 200px;
+    border: 3px solid #838383;
+}
+
+/* ! account details */
+
+.accountDetail > li {
+    padding: 70px 0 0 0;
+    font-size: 20px;
+}
+
+.accountDetail p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.changePass > li {
+    padding: 40px 0 0 0;
+    font-size: 20px;
+}
+
+.inputItem>input {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+}
+
+.accountMain li {
+    border-bottom: 3px solid white;
+}
+
+.accountDetail {
+    display: flex;
+    justify-content: center;
+    grid-column: 4;
+}
+
+.changePass {
+    display: flex;
+    justify-content: center;
+    grid-column: 6;
+}
+
+.changePass > h4 {
+    margin: 30px 0 0 0;
+    font-size: 28px;
+}
+
+.accountDetail, .changePass {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: white;
+    height: 537px;
+}
+
+/* ! Market */
+
+.marketMain {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px 20px;
+    width: 90%;
+    margin: auto;
+    padding: 0 0 2rem 0;
+    justify-content: space-around;
+}
+
+.marketGames {
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    width: 590px;
+    margin: 20px 0;
+}
+
+.marketGames img {
+    width: 250px;
+}
+
+#h1Market {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.info {
+    padding: 0 0 0 10px;
+    color: white;
+    height: 100%;
+}
+
+.price {
+    margin: 10px 0 20px 0;
+    color: white;
+}
+
+.viewMore {
+    background-color: #F2545B;
+    border-radius: 4px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.gameCard, .marketGames img {
+    padding: 20px 0;
+}
+
+/* ! Game page */
+
+.gamePageMain {
+    display: grid;
+    grid-template-columns: 720px 720px;
+    grid-gap: 0 40px;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+
+.gameBtn {
+    background-color: #F2545B;
+    border-radius: 4px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+.gamePageMain img{
+    width: 600px;
+}
+
+#buyBtn, #moreInfo {
+   cursor: pointer; 
+}
+
+.addToCart {
+    margin-right: 10px;
+}
+
+.gameInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 50px;
+}
+
+.availableInfo > p {
+    margin: 20px 0;
+    font-size: 24;
+    color: rgba(255, 255, 255, 0.575);
+
+}
+
+.gamePrice {
+    margin: 40px 0 80px 0;
+    color: white;
+    font-size: 38px;
+}
+
+.gamePageMain figure {
+    width: 600px;
+}
+
+figcaption {
+    color: white;
+    margin: 20px 0;
+    line-height: 25px;
+}
+
+/* ! Checkout */
+
+.checkoutMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 40px;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+
+.shipping {
+    color: white;
+}
+
+.shipping > h1{
+    margin-bottom: 10px;
+}
+
+.checkout h2 {
+    margin-bottom: 10px;
+    border-bottom: 3px solid white;
+}
+
+.checkoutDetails {
+    padding: 30px 0;
+}
+
+#checkoutForm > input {
+    background-color: transparent;
+    border: white solid 3px;
+    border-radius: 3px;
+    font-size: 18px;
+    margin: 5px 0 20px 0;
+}
+
+.fnameCardnr {
+    width: 600px;
+}
+
+.exdateCcv {
+    width: 200px;
+}
+
+
+
+#checkoutForm > label{
+    margin: 20px 0 0 0;
+    color: white;
+}
+
+#purchase {
+    background-color: #F2545B;
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    color: white;
+    width: 200px;
+    font-size: 18px;
+    margin: 20px 0 0 0;
+}
+
+#purchase:hover {
+    cursor: pointer;
+}
+
+.order {
+    margin: 55px 0 0 0;
+}
+
+.gameOrder {
+    margin: 10px 0 0 0;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.order img{
+    margin: 20px 0 0 0;
+    width: 300px;
+}
+
+/* ! library */
+
+.libraryMain {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px 20px;
+    width: 90%;
+    margin: auto;
+    padding: 0 0 2rem 0;
+    justify-content: space-around;
+}
+
+#h1Library {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.play {
+    background-color: #F2545B;
+    border-radius: 4px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#moreInfo {
+    margin-top: 20px;
+}
+
+.libraryGames {
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    width: 590px;
+    margin: 20px 0;
+}
+
+.libraryGames img {
+    width: 250px;
+    height: 180px;
+}
+
+.gameCard, .libraryGames img {
+    padding: 20px 0;
+}
+
+/* ! success page */
+
+.successMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row: 3;
+}
+
+#success {
+    width: 400px;
+    margin: 25px 0 0 0;
+}
+
+#successnr {
+    color: rgba(255, 255, 255, 0.438);
+    margin-bottom: 30px;
+}
+
+#continueShopping {
+    background-color: #F2545B;
+    border-radius: 4px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.successMain img {
+    padding: 50px 0;
+}
+
+.successMain h2{
+    padding: 20px 0;
+}
+
+#backtoaccount {
+    margin-top: 30px;
+}
+
+/* ! Create account */
+
+.createMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row: 3;
+    justify-content: space-evenly;
+}
+
+.createAccount > input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid white;
+    padding: 0 0 0px 50px;
+    width: 400px;
+    font-size: 24px;
+    color: white;
+}
+
+#username {
+    background-image: url(img/user.png);
+    background-repeat: no-repeat;
+    padding-top: 20px;
+}
+
+#email {
+    background-image: url(img/email.png);
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    padding-top: 8px;
+}
+
+#pass {
+    background-image: url(img/lock.png);
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+#confirmpass {
+    background-image: url(img/checkedLock.png);
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+#signup {
+    background-color: #F2545B;
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    color: white;
+    width: 200px;
+    font-size: 18px;
+    margin: 20px 0 0 0;
+}
+
+/* ! Contact */
+
+.contactMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row: 3;
+    justify-content: center;
+}
+
+.contactMain > h1 {
+    margin: 50px 0;
+}
+
+.contactForm > input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid white;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    padding: 2px 0 3px 0;
+    margin: 5px 0 50px 0;
+}
+
+.contactForm > label {
+    color: white;
+    font-size: 24px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px 0;
+}
+
+#contactText {
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    color: white;
+    resize: none;
+    font-size: 20px;
+    font-family: 'monsterrat', sans-serif;
+}
+
+#signup {
+    cursor: pointer;
+    margin: 0;
+}
+
+#submit {
+    background-color: #F2545B;
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    color: white;
+    width: 200px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    border: solid 3px #F2545B;
+    background-color: #19323C;
+}
+
+/* ! Search result */
+
+.allCards {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0 2rem 0;
+}
+
+.searchResult {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.searchCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.searchImg {
+    width: 250px;
+    margin: 30px 0 0 0;
+}
+
+.gameIcon{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.platform {
+    display: flex;
+    margin: 30px 0;
+    
+}
+
+#winIcon {
+    width: 25px;
+}
+
+#xboxIcon {
+    width: 25px;
+}
+
+
+/* Laptop */
+@media (max-width: 1440px) {
+    .gamePageMain {
+        grid-template-columns: auto 720px;
+        grid-gap: 0 10px;
+    }
+
+    /* success page */
+
+    #backtoaccount {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+/* Ipad */
+@media (max-width: 800px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    /* Account */
+
+    .accountMain {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    .accountDetail {
+        width: 500px;
+    }
+
+    .changePass {
+        width: 500px;
+        margin: 50px 0 0 0;
+    }
+
+    /* Market */
+
+    .marketMain {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Game page */
+
+    .gamePageMain {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .gamePageMain img{
+        margin-top: 40px;
+        width: 400px;
+    }
+
+    .gameInfo {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    /* Checkout */
+
+    .checkoutMain {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .checkout {
+        margin: 100px 0 0 0;
+    }
+
+    .shipping h1 {
+        display: none;
+    }
+
+    .exdateCcv {
+        width: 100%;
+    }
+
+    #purchase {
+        width: 100%;
+    }
+
+    .fnameCardnr {
+        width: 100%;
+    }
+
+    /* Library */
+
+    .libraryMain {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    /* Search result */
+
+    .searchImg {
+        width: 150px;
+        margin: 30px 0 0 0;
+    }
+
+    .allCards {
+        
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0 2rem 0;
+        text-align: center;
+    }
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 414px) {
+
+    /* Index */
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #biglogo {
+        width: 300px;
+    }
+
+    /* Account */
+
+    .accountDetail {
+        width: 300px;
+    }
+
+    .changePass {
+        width: 300px;
+        margin: 50px 0;
+    }
+
+    div.profile p {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    /* Market */
+
+    .marketMain {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .marketGames {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Game page */
+
+    .gamePageMain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gameInfo {
+        width: 100%;
+    }
+
+    .gameInfo h1 {
+        margin: 50px 0; 
+    }
+
+    .gamePageMain img{
+        width: 100%;
+    }
+
+    .gamePageMain figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    figcaption {
+        margin: 20px 0;
+    }
+
+    /* Checkout */
+
+    .checkoutMain {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 300px;
+    }
+
+    .checkout {
+        margin: 50px 0 0 0;
+    }
+
+    .shipping h1 {
+        display: none;
+    }
+
+    .fnameCardnr {
+        width: 300px;
+    }
+
+    .exdateCcv {
+        width: 100%;
+    }
+
+    #purchase {
+        width: 100%;
+    }
+
+    /* Library */
+
+    .libraryGames {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    #playbtn {
+        display: none;
+    }
+
+    /* Checkout success */
+
+    #success {
+        width: 300px;
+        padding: 40px 0;
+    }
+
+    /* Create account */
+
+    .createAccount > input {
+        border: none;
+        background-color: transparent;
+        border-bottom: 3px solid white;
+        padding: 0 0 0px 50px;
+        width: 350px;
+        font-size: 18px;
+        color: white;
+    }
+
+    #username {
+        background-size: 35px;
+    }
+    
+    #email {
+        background-size: 35px;
+    }
+    
+    #pass {
+        background-size: 35px;
+    }
+    
+    #confirmpass {
+        background-size: 35px;
+    }
+
+    /* Contact */
+
+    .contactForm {
+        width: 300px;
+    }
+
+    #submit {
+        margin-bottom: 50px;
+    }
+
+    .contactForm > input {
+        font-size: 18px;
+    }
+
+    #contactText {
+        font-size: 18px;
+    }
+
+    /* Search result */
+
+    .searchImg {
+        width: 150px;
+        margin: 10px 0 0 0;
+    }
+    
+    .allCards {  
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .searchContainer {
+        margin-top: 50px;
+    }
+}
