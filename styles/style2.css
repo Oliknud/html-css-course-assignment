@@ -82,12 +82,12 @@ h2 {
 
 h3 {
     color: white;
-    font-size: 18;
+    font-size: 18px;
 }
 
 h4 {
     color: white;
-    font-size: 16;
+    font-size: 16px;
 }
 
 header>a {
@@ -130,6 +130,7 @@ header>a {
 .accountMain {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr 1fr 2fr 1fr;
+    grid-row: auto;
     align-items: center;
 }
 
@@ -144,11 +145,6 @@ header>a {
     list-style: none;
     color: white;
     font-size: 20px;
-}
-
-.accountMain > h1{
-    font-size: 38px;
-    color: white;
 }
 
 .profile {
@@ -326,7 +322,7 @@ div.profile img {
     width: 600px;
 }
 
-#buyBtn, #moreInfo {
+#buyBtn, .moreInfo {
    cursor: pointer; 
 }
 
@@ -342,9 +338,8 @@ div.profile img {
 
 .availableInfo > p {
     margin: 20px 0;
-    font-size: 24;
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.575);
-
 }
 
 .gamePrice {
@@ -473,7 +468,7 @@ figcaption {
     margin-top: 10px;
 }
 
-#moreInfo {
+.moreInfo {
     margin-top: 20px;
 }
 
@@ -952,7 +947,7 @@ figcaption {
         flex-wrap: wrap;
     }
 
-    #playbtn {
+    .playbtn {
         display: none;
     }
 

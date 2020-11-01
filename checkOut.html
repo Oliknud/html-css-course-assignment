@@ -14,10 +14,10 @@
             <input type="text" name="search">
         </header>
             <ul class="flex-secondNav">
-                <a href="account.html"><li>Account</li></a>
-                <a href="market.html"><li>Market</li></a>
-                <a href="library.html"><li>Library</li></a>
-                <a href="contact.html"><li>Contact us</li></a>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="market.html">Market</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="contact.html">Contact us</a></li>
             </ul>
         <main class="checkoutMain">
             <div class="checkout">
@@ -33,13 +33,13 @@
                     <h2>Payment details</h2>
                     <form action="#" id="checkoutForm">
                         <label for="fname">Full name:</label><br>
-                        <input type="text" name="fname" class="fnameCardnr"><br>
+                        <input type="text" name="fname" id="fname" class="fnameCardnr"><br>
                         <label for="cardnr">Card number:</label><br>
-                        <input type="text" name="cardnr" class="fnameCardnr"><br>
+                        <input type="text" name="cardnr" id="cardnr" class="fnameCardnr"><br>
                         <label for="expire">Expiry date:</label><br>
-                        <input type="text" name="exDate" class="exdateCcv"><br>
+                        <input type="text" name="exDate" id="expire" class="exdateCcv"><br>
                         <label for="ccv">CCV:</label><br>
-                        <input type="text" name="ccv" class="exdateCcv"><br>
+                        <input type="text" name="ccv" id="ccv" class="exdateCcv"><br>
                         <button id="purchase" formaction="checkoutSuccess.html">Purchase</button>
                     </form>               
                 </div> 
